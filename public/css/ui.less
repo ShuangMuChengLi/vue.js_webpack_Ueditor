@@ -1,0 +1,214 @@
+@import "base";
+
+.el-tabs__item{
+  font-size: 12px;
+  height: 40px;
+  line-height: 38px;
+}
+.page-tab.el-tabs--border-card>.el-tabs__header {
+  background-color: #f8f8f8;
+  margin: 0;
+}
+.el-popover, .page-tab.el-tabs--border-card {
+  box-shadow: none;
+}
+.page-tab.el-tabs--border-card>.el-tabs__header  .el-tabs__item.is-active {
+  .font-wr;
+  border-top:3px solid #0c6638;
+  color:#000;
+  font-size:14px;
+}
+.dialog-tab.el-tabs--card>.el-tabs__header  .el-tabs__item.is-active {
+  background-color: #f8f8f8;
+  color:#333333;
+}
+.el-tabs__item:first-child{
+  margin-left: 15px;
+}
+.new-table-style.el-table{
+  border:none;
+  font-size: 12px;
+}
+.new-table-style.el-table::after{
+  width: 0;
+}
+.el-table th {
+  background-color: #f8f8f8;
+}
+.el-table td, .el-table th {
+  height: 31px;
+}
+.el-table__fixed-header-wrapper thead div, .el-table__header-wrapper thead div {
+  font-weight: 500;
+  color: #333;
+  background-color: #f8f8f8;
+  height:35px;
+}
+.el-table--striped .el-table__body tr:nth-child(2n) td {
+  background: #f3fff9;
+  background-clip: padding-box;
+}
+.el-table--enable-row-hover .el-table__body tr:hover>td {
+  background-color: #eefff6;
+  background-clip: padding-box;
+}
+//.el-table--enable-row-hover .el-table__body tr:hover>td {
+//  background-color: #f3fff9;
+//  background-clip: padding-box;
+//}
+.el-pagination {
+  display: inline-block;
+  vertical-align: middle;
+}
+.el-input__inner{
+  border:@cmsBorder;
+  height: 26px;
+  font-size: 12px;
+  .font-wr;
+  border-radius: 2px;
+}
+.cms-dialog-meeting .el-dialog__header {
+  .font-wr;
+  padding: 0 20px 0 0;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+.cms-dialog-meeting .el-dialog__header button{
+  margin-top:13px;
+}
+.cms-dialog .el-dialog__header .el-dialog__title{
+  font-size:14px;
+  color:#333333;
+  font-weight: 600;
+}
+.cms-dialog .el-dialog__body {
+  padding: 20px 20px;
+  color: #333333;
+  font-size: 12px;
+}
+.el-button:focus, .el-button:hover {
+  color: #1f2d3d;
+  border-color: #bfcbd9;
+}
+.el-button--success ,.el-button--success:hover{
+  color: #fff;
+  background-color: #1f8551;
+  border-color: #1d9457;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  background-color: #157443;
+  border-color: #157443;
+}
+.el-checkbox__inner {
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+}
+.el-checkbox__inner::after {
+  height: 6px;
+  left: 4px;
+  top: 1px;
+  width: 2px;
+
+}
+.overall-tab{
+  margin:-15px;
+}
+.el-pagination button, .el-pagination span {
+  height: 26px;
+  line-height: 26px;
+}
+.el-pagination .el-select .el-input input {
+  height: 26px;
+}
+.el-pager li {
+  height: 26px;
+}
+.el-pagination {
+  white-space: nowrap;
+  padding: 0 5px;
+  color: #48576a;
+}
+.page-submit-btn.page-submit-btn  {
+  height: 24px;
+  line-height: 24px;
+}
+.el-select .el-input .el-input__icon.is-reverse {
+  transform: none;
+}
+.el-select .el-input .el-input__icon {
+  transform:  rotate3d(0,0,1,180deg);
+  top: 0;
+}
+
+.el-loading-spinner .path {
+  stroke: #0c6638;
+}
+.el-loading-spinner .el-loading-text{
+  color:#0c6638;
+}
+.el-table td.col-top{
+  vertical-align: top;
+}
+.el-pager li.active{
+  border-color: @liteGreen;
+  background-color: @liteGreen;
+}
+.el-textarea__inner{
+  font-size:12px;
+  height: 100%;
+  .font-wr;
+  border:@cmsBorder;
+}
+.el-upload{
+  width:650px;
+  height: 200px;
+}
+
+.el-upload-dragger{
+  width: 100%;
+  height: 100%;
+}
+.el-upload-list{
+  width:350px;
+}
+.ql-container .ql-editor {
+  padding-bottom: 1em;
+  height: 400px;
+}
+thead{
+  border-color: @cmsBorderColor;
+}
+//.new-table-style.el-table td, .new-table-style.el-table th.is-leaf {
+//  border-bottom: none;
+//}
+.new-table-style.el-table thead th.is-leaf {
+  border-bottom: none;
+}
+.el-scrollbar__wrap{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.el-time-spinner__wrapper{
+  height: 190px;
+}
+.el-radio__label{
+  font-size:12px;
+}
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: #0c6638;
+  background: #0c6638;
+}
+.el-radio__inner {
+  width: 16px;
+  height: 16px;
+}
+.el-table tr {
+  background-color: #fff;
+  height: 35px;
+}
+.el-select-dropdown{
+  z-index: 1500 !important;
+}
