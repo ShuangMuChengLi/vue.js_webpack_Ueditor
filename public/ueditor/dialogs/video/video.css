@@ -1,27 +1,6 @@
 @charset "utf-8";
-/* dialog样式 */
-.wrapper {
-    zoom: 1;
-    width: 630px;
-    *width: 626px;
-    height: 380px;
-    margin: 0 auto;
-    padding: 10px;
-    position: relative;
-    font-family: sans-serif;
-}
-
-/*tab样式框大小*/
-.tabhead {
-    float:left;
-}
-.tabbody {
-    width: 100%;
-    height: 346px;
-    position: relative;
-    clear: both;
-}
-
+.wrapper{ width: 570px;_width:575px;margin: 10px auto; zoom:1;position: relative}
+.tabbody{height: 335px;}
 .tabbody .panel {
     position: absolute;
     width: 0;
@@ -30,169 +9,83 @@
     overflow: hidden;
     display: none;
 }
-
 .tabbody .panel.focus {
     width: 100%;
-    height: 346px;
+    height: 335px;
     display: block;
 }
 
-/* 图片对齐方式 */
-.alignBar{
-    float:right;
-    margin-top: 5px;
-    position: relative;
+.tabbody .panel table td{vertical-align: middle;}
+#videoUrl {
+    width: 490px;
+    height: 21px;
+    line-height: 21px;
+    margin: 8px 5px;
+    background: #FFF;
+    border: 1px solid #d7d7d7;
 }
-
-.alignBar .algnLabel{
-    float:left;
-    height: 20px;
-    line-height: 20px;
+#videoSearchTxt{margin-left:15px;background: #FFF;width:200px;height:21px;line-height:21px;border: 1px solid #d7d7d7;}
+#searchList{width: 570px;overflow: auto;zoom:1;height: 270px;}
+#searchList div{float: left;width: 120px;height: 135px;margin: 5px 15px;}
+#searchList img{margin: 2px 8px;cursor: pointer;border: 2px solid #fff} /*不用缩略图*/
+#searchList p{margin-left: 10px;}
+#videoType{
+    width: 65px;
+    height: 23px;
+    line-height: 22px;
+    border: 1px solid #d7d7d7;
 }
-
-.alignBar #alignIcon{
-    zoom:1;
-    _display: inline;
-    display: inline-block;
-    position: relative;
-}
-.alignBar #alignIcon span{
-    float: left;
+#videoSearchBtn,#videoSearchReset{
+    /*width: 80px;*/
+    height: 25px;
+    line-height: 25px;
+    background: #eee;
+    border: 1px solid #d7d7d7;
     cursor: pointer;
-    display: block;
-    width: 19px;
-    height: 17px;
-    margin-right: 3px;
-    margin-left: 3px;
-    background-image: url(./images/alignicon.jpg);
-}
-.alignBar #alignIcon .none-align{
-    background-position: 0 -18px;
-}
-.alignBar #alignIcon .left-align{
-    background-position: -20px -18px;
-}
-.alignBar #alignIcon .right-align{
-    background-position: -40px -18px;
-}
-.alignBar #alignIcon .center-align{
-    background-position: -60px -18px;
-}
-.alignBar #alignIcon .none-align.focus{
-    background-position: 0 0;
-}
-.alignBar #alignIcon .left-align.focus{
-    background-position: -20px 0;
-}
-.alignBar #alignIcon .right-align.focus{
-    background-position: -40px 0;
-}
-.alignBar #alignIcon .center-align.focus{
-    background-position: -60px 0;
+    padding: 0 5px;
 }
 
 
 
-
-/* 远程图片样式 */
-#remote {
-    z-index: 200;
+#preview{position: relative;width: 420px;padding:0;overflow: hidden; margin-left: 10px; _margin-left:5px; height: 280px;background-color: #ddd;float: left}
+#preview .previewMsg {position:absolute;top:0;margin:0;padding:0;height:280px;width:100%;background-color: #666;}
+#preview .previewMsg span{display:block;margin: 125px auto 0 auto;text-align:center;font-size:18px;color:#fff;}
+#preview .previewVideo {position:absolute;top:0;margin:0;padding:0;height:280px;width:100%;}
+.edui-video-wrapper fieldset{
+    border: 1px solid #ddd;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    width: 115px;
 }
 
-#remote .top{
-    width: 100%;
-    margin-top: 25px;
+#videoInfo {width: 120px;float: left;margin-left: 10px;_margin-left:7px;}
+fieldset{
+    border: 1px solid #ddd;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    width: 115px;
 }
-#remote .left{
-    display: block;
-    float: left;
-    width: 300px;
-    height:10px;
+fieldset legend{font-weight: bold;}
+fieldset p{line-height: 30px;}
+fieldset input.txt{
+    width: 65px;
+    height: 21px;
+    line-height: 21px;
+    margin: 8px 5px;
+    background: #FFF;
+    border: 1px solid #d7d7d7;
 }
-#remote .right{
-    display: block;
-    float: right;
-    width: 300px;
-    height:10px;
-}
-#remote .row{
-    margin-left: 20px;
-    clear: both;
-    height: 40px;
-}
+label.url{font-weight: bold;margin-left: 5px;color: #06c;}
+#videoFloat div{cursor:pointer;opacity: 0.5;filter: alpha(opacity = 50);margin:9px;_margin:5px;width:38px;height:36px;float:left;}
+#videoFloat .focus{opacity: 1;filter: alpha(opacity = 100)}
+span.view{display: inline-block;width: 30px;float: right;cursor: pointer;color: blue}
 
-#remote .row label{
-    text-align: center;
-    width: 50px;
-    zoom:1;
-    _display: inline;
-    display:inline-block;
-    vertical-align: middle;
-}
-#remote .row label.algnLabel{
-    float: left;
 
-}
 
-#remote input.text{
-    width: 150px;
-    padding: 3px 6px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-#remote input.text:focus {
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
-}
-#remote #url{
-    width: 500px;
-    margin-bottom: 2px;
-}
-#remote #width,
-#remote #height{
-    width: 20px;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-#remote #border,
-#remote #vhSpace,
-#remote #title{
-    width: 180px;
-    margin-right: 5px;
-}
-#remote #lock{
-}
-#remote #lockicon{
-    zoom: 1;
-    _display:inline;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: url("../../themes/default/images/lock.gif") -13px -13px no-repeat;
-    vertical-align: middle;
-}
-#remote #preview{
-    clear: both;
-    width: 260px;
-    height: 240px;
-    z-index: 9999;
-    margin-top: 10px;
-    background-color: #eee;
-    overflow: hidden;
-}
 
-/* 上传图片 */
+/* upload video */
 .tabbody #upload.panel {
     width: 0;
     height: 0;
@@ -202,20 +95,20 @@
     background: #fff;
     display: block;
 }
-
 .tabbody #upload.panel.focus {
     width: 100%;
-    height: 346px;
+    height: 335px;
     display: block;
     clip: auto;
 }
+#upload_alignment div{cursor:pointer;opacity: 0.5;filter: alpha(opacity = 50);margin:9px;_margin:5px;width:38px;height:36px;float:left;}
+#upload_alignment .focus{opacity: 1;filter: alpha(opacity = 100)}
+#upload_left { width:427px; float:left; }
+#upload_left .controller { height: 30px; clear: both; }
+#uploadVideoInfo{margin-top:10px;float:right;padding-right:8px;}
 
 #upload .queueList {
     margin: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
 }
 
 #upload p {
@@ -235,17 +128,21 @@
 
 #upload .placeholder {
     margin: 10px;
+    margin-right:0;
     border: 2px dashed #e6e6e6;
     *border: 0px dashed #e6e6e6;
-    height: 172px;
+    height: 161px;
     padding-top: 150px;
     text-align: center;
+    width: 97%;
+    float: left;
     background: url(./images/image.png) center 70px no-repeat;
     color: #cccccc;
     font-size: 18px;
     position: relative;
     top:0;
-    *top: 10px;
+    *margin-left: 0;
+    *left: 10px;
 }
 
 #upload .placeholder .webuploader-pick {
@@ -300,7 +197,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
-    height: 300px;
+    height: 285px;
 }
 
 #upload .filelist:after {
@@ -310,7 +207,6 @@
     height: 0;
     overflow: hidden;
     clear: both;
-    position: relative;
 }
 
 #upload .filelist li {
@@ -318,8 +214,8 @@
     height: 113px;
     background: url(./images/bg.png);
     text-align: center;
-    margin: 9px 0 0 9px;
-    *margin: 6px 0 0 6px;
+    margin: 15px 0 0 20px;
+    *margin: 15px 0 0 15px;
     position: relative;
     display: block;
     float: left;
@@ -429,6 +325,15 @@
     -ms-transition: 200ms ease-out;
     transition: 200ms ease-out;
 }
+#upload .filelist li p.imgWrap.notimage {
+    margin-top: 0;
+    width: 111px;
+    height: 111px;
+    border: 1px #eeeeee solid;
+}
+#upload .filelist li p.imgWrap.notimage i.file-preview {
+    margin-top: 15px;
+}
 
 #upload .filelist li img {
     width: 100%;
@@ -456,7 +361,7 @@
     width: 100%;
     z-index: 200;
     background: url(./images/success.png) no-repeat right bottom;
-    background: url(./images/success.gif) no-repeat right bottom \9;
+    background-image: url(./images/success.gif) \9;
 }
 
 #upload .filelist li.filePickerBlock {
@@ -631,264 +536,100 @@
 }
 
 
-
-/* 图片管理样式 */
-#online {
-    width: 100%;
-    height: 336px;
-    padding: 10px 0 0 0;
-}
-#online #imageList{
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    position: relative;
-}
-#online ul {
+/* 在线文件的文件预览图标 */
+i.file-preview {
     display: block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-#online li {
-    float: left;
-    display: block;
-    list-style: none;
-    padding: 0;
-    width: 113px;
-    height: 113px;
-    margin: 0 0 9px 9px;
-    *margin: 0 0 6px 6px;
-    background-color: #eee;
-    overflow: hidden;
-    cursor: pointer;
-    position: relative;
-}
-#online li.clearFloat {
-    float: none;
-    clear: both;
-    display: block;
-    width:0;
-    height:0;
-    margin: 0;
-    padding: 0;
-}
-#online li img {
-    cursor: pointer;
-}
-#online li .icon {
-    cursor: pointer;
-    width: 113px;
-    height: 113px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    border: 0;
+    margin: 10px auto;
+    width: 70px;
+    height: 70px;
+    background-image: url("./images/file-icons.png");
+    background-image: url("./images/file-icons.gif") \9;
+    background-position: -140px center;
     background-repeat: no-repeat;
 }
-#online li .icon:hover {
-    width: 107px;
-    height: 107px;
-    border: 3px solid #1094fa;
+i.file-preview.file-type-dir{
+    background-position: 0 center;
 }
-#online li.selected .icon {
-    background-image: url(images/success.png);
-    background-image: url(images/success.gif)\9;
-    background-position: 75px 75px;
+i.file-preview.file-type-file{
+    background-position: -140px center;
 }
-#online li.selected .icon:hover {
-    width: 107px;
-    height: 107px;
-    border: 3px solid #1094fa;
-    background-position: 72px 72px;
+i.file-preview.file-type-filelist{
+    background-position: -210px center;
 }
-
-
-/* 图片搜索样式 */
-#search .searchBar {
-    width: 100%;
-    height: 30px;
-    margin: 10px 0 5px 0;
-    padding: 0;
+i.file-preview.file-type-zip,
+i.file-preview.file-type-rar,
+i.file-preview.file-type-7z,
+i.file-preview.file-type-tar,
+i.file-preview.file-type-gz,
+i.file-preview.file-type-bz2{
+    background-position: -280px center;
 }
-
-#search input.text{
-    width: 150px;
-    padding: 3px 6px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+i.file-preview.file-type-xls,
+i.file-preview.file-type-xlsx{
+    background-position: -350px center;
 }
-#search input.text:focus {
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+i.file-preview.file-type-doc,
+i.file-preview.file-type-docx{
+    background-position: -420px center;
 }
-#search input.searchTxt {
-    margin-left:5px;
-    padding-left: 5px;
-    background: #FFF;
-    width: 300px;
-    *width: 260px;
-    height: 21px;
-    line-height: 21px;
-    float: left;
-    dislay: block;
+i.file-preview.file-type-ppt,
+i.file-preview.file-type-pptx{
+    background-position: -490px center;
 }
-
-#search .searchType {
-    width: 65px;
-    height: 28px;
-    padding:0;
-    line-height: 28px;
-    border: 1px solid #d7d7d7;
-    border-radius: 0;
-    vertical-align: top;
-    margin-left: 5px;
-    float: left;
-    dislay: block;
+i.file-preview.file-type-vsd{
+    background-position: -560px center;
 }
-
-#search #searchBtn,
-#search #searchReset {
-    display: inline-block;
-    margin-bottom: 0;
-    margin-right: 5px;
-    padding: 4px 10px;
-    font-weight: 400;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid transparent;
-    white-space: nowrap;
-    font-size: 14px;
-    border-radius: 4px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    vertical-align: top;
-    float: right;
+i.file-preview.file-type-pdf{
+    background-position: -630px center;
 }
-
-#search #searchBtn {
-    color: white;
-    border-color: #285e8e;
-    background-color: #3b97d7;
+i.file-preview.file-type-txt,
+i.file-preview.file-type-md,
+i.file-preview.file-type-json,
+i.file-preview.file-type-htm,
+i.file-preview.file-type-xml,
+i.file-preview.file-type-html,
+i.file-preview.file-type-js,
+i.file-preview.file-type-css,
+i.file-preview.file-type-php,
+i.file-preview.file-type-jsp,
+i.file-preview.file-type-asp{
+    background-position: -700px center;
 }
-#search #searchReset {
-    color: #333;
-    border-color: #ccc;
-    background-color: #fff;
+i.file-preview.file-type-apk{
+    background-position: -770px center;
 }
-#search #searchBtn:hover {
-    background-color: #3276b1;
+i.file-preview.file-type-exe{
+    background-position: -840px center;
 }
-#search #searchReset:hover {
-    background-color: #eee;
+i.file-preview.file-type-ipa{
+    background-position: -910px center;
 }
-
-#search .msg {
-    margin-left: 5px;
+i.file-preview.file-type-mp4,
+i.file-preview.file-type-swf,
+i.file-preview.file-type-mkv,
+i.file-preview.file-type-avi,
+i.file-preview.file-type-flv,
+i.file-preview.file-type-mov,
+i.file-preview.file-type-mpg,
+i.file-preview.file-type-mpeg,
+i.file-preview.file-type-ogv,
+i.file-preview.file-type-webm,
+i.file-preview.file-type-rm,
+i.file-preview.file-type-rmvb{
+    background-position: -980px center;
 }
-
-#search .searchList{
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    clear: both;
+i.file-preview.file-type-ogg,
+i.file-preview.file-type-wav,
+i.file-preview.file-type-wmv,
+i.file-preview.file-type-mid,
+i.file-preview.file-type-mp3{
+    background-position: -1050px center;
 }
-#search .searchList ul{
-    margin:0;
-    padding:0;
-    list-style:none;
-    clear: both;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    zoom: 1;
-    position: relative;
-}
-
-#search .searchList li {
-    list-style:none;
-    float: left;
-    display: block;
-    width: 115px;
-    margin: 5px 10px 5px 20px;
-    *margin: 5px 10px 5px 15px;
-    padding:0;
-    font-size: 12px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
-    position: relative;
-    vertical-align: top;
-    text-align: center;
-    overflow: hidden;
-    cursor: pointer;
-    filter: alpha(Opacity=100);
-    -moz-opacity: 1;
-    opacity: 1;
-    border: 2px solid #eee;
-}
-
-#search .searchList li.selected {
-    filter: alpha(Opacity=40);
-    -moz-opacity: 0.4;
-    opacity: 0.4;
-    border: 2px solid #00a0e9;
-}
-
-#search .searchList li p {
-    background-color: #eee;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width:100%;
-    height:115px;
-    overflow: hidden;
-}
-
-#search .searchList li p img {
-    cursor: pointer;
-    border: 0;
-}
-
-#search .searchList li a {
-    color: #999;
-    border-top: 1px solid #F2F2F2;
-    background: #FAFAFA;
-    text-align: center;
-    display: block;
-    padding: 0 5px;
-    width: 105px;
-    height:32px;
-    line-height:32px;
-    white-space:nowrap;
-    text-overflow:ellipsis;
-    text-decoration: none;
-    overflow: hidden;
-    word-break: break-all;
-}
-
-#search .searchList a:hover {
-    text-decoration: underline;
-    color: #333;
-}
-#search .searchList .clearFloat{
-    clear: both;
+i.file-preview.file-type-jpg,
+i.file-preview.file-type-jpeg,
+i.file-preview.file-type-gif,
+i.file-preview.file-type-bmp,
+i.file-preview.file-type-png,
+i.file-preview.file-type-psd{
+    background-position: -140px center;
 }
